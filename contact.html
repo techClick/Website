@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<meta charset="utf-8">
+    	<title>Nigerian website</title>
+        <!-- <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon"> -->
+        <!-- -->
+        <script src="mainJS.js"></script>
+        <script>
+            function validate(){
+                alert("message sent, we will reply soon");
+                return true;
+            }
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="navigation.css">
+        <link rel="stylesheet" type="text/css" href="footer.css">
+        <link rel="stylesheet" type="text/css" href="topAreaStyle.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style>
+            #main2{
+                height:1000px;
+            }        
+            input[type=text], select, textarea {
+              width: 100%;
+              padding: 12px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+              margin-top: 6px;
+              margin-bottom: 16px;
+              resize: vertical;
+            }
+            
+            input[type=submit] {
+              background-color: #4CAF50;
+              color: white;
+              padding: 12px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+            
+            .formHolder {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+              margin:40px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- -->
+        <div id="container">
+            <div id = "main2">
+                <!-- Top Area -->
+                <div id="topArea">
+                    <span>
+                        <img id="img1" src="flag.jpeg" alt="Nigerian Image" width="100" height="100" >
+                    </span>
+                    <span id="heading">
+                        WEBSITE
+                    </span>
+                    <span id="description">
+                        <br>This website developer can cater for you
+                    </span>
+                    <div id="intro">
+                        <ul>
+                            <li>Ikechi Anya |</li>
+                            <li>Web Developer |</li>
+                            <li>ikechianya1@gmail.com |</li>
+                            <li>+2349083671603 |</li>
+                        </ul>
+                    </div>
+                    <div id="description2">
+                        "A website developer that has several years in building websites, database admin as well as general programming"
+                    </div>
+                </div>
+                <!-- Navigation Bar -->
+                <div id="nav" >
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <!-- pageHolder -->
+                <div id="pageHolder" style="border:0.1px solid white;height:720px;">
+                    <div class="formHolder" style="font-family: Arial, Helvetica, sans-serif;box-sizing: border-box;padding:50px">
+                        <form action="contact.html" onsubmit="return validate()" >
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                            
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="emailH" placeholder="Your email.." required>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer id="footerDiv222">
+            <div id="footerDivLinks1">
+                <ul>
+                    <li>QUICK LINKS</li>
+                    <li><a href="#news"><br>Home</a></li>
+                    <li><a href="#news">About me</a></li>
+                    <li><a href="#news">Forms</a></li>
+                    <li><a href="#news">Contact us</a></li>
+                </ul>
+            </div>
+            <div id="footerDivLinks2">
+                <ul>
+                    <li>QUICK LINKS 2</li>
+                    <li><a href="#news"><br>Procurement</a></li>
+                    <li><a href="#news">Know the designer</a></li>
+                    <li><a href="#news">Meet me</a></li>
+                    <li><a href="#news">About Ikechi</a></li>
+                </ul>
+            </div>
+            <div id="footerDivLinks3">
+                <ul>
+                    <li>Address</li>
+                    <li><br>Plot 77, Off Ideala Highway 
+                        second express road PortHarcourt,
+                        Rivers, Nigeria</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
